@@ -1,0 +1,1 @@
+print("FinanceAI iniciado!")
