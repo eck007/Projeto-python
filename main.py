@@ -1,8 +1,8 @@
-#PARTE 1 /MENU INTERATIVO/ COMPLETO
+#   PARTE 1 MENU INTERATIVO 
 print("    FinanceIA   ")
 
 opcao=""
-
+receitas = []
 while opcao != "5":
  print("\n1 - Adicionar receita")
  print("2 - Adicionar despesa")
@@ -14,6 +14,7 @@ while opcao != "5":
  print("Você escolheu:", opcao)
  if opcao == "1":
     valor = float(input("Digite o valor da receita: R$").replace(",","."))
+    receitas.append(valor)
     print(f"Receita de R$ {valor:.2f} adicionada!")
     print("Adicionar receita")
  elif opcao == "2":
@@ -25,4 +26,7 @@ while opcao != "5":
  elif opcao == "5":
     print("Saindo do FinanceIA...")  
  else:
-    print("Opção inválida!")          
+    print("Opção inválida!")
+
+
+#   PARTE 2 TRANSAÇÔES
